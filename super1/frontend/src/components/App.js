@@ -1,9 +1,20 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import ReactDOM from 'react-dom'
 
+import Header from './layout/Header'
+import Dashboard from './heroes/Dashboard'
 class App extends Component {
     render() {
-        return  <h1> React app </h1>
+        return(
+            <Fragment>
+                <div>
+                    <Header/>
+                    <div className="container">
+                    <Dashboard/>
+                    </div>
+                </div>
+            </Fragment>
+        )
         
     }
 }
